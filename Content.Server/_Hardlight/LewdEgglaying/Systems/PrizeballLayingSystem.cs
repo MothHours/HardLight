@@ -160,7 +160,7 @@ public sealed class PrizeballLayingSystem : SharedPrizeballLayingSystem // HL: W
             _popup.PopupEntity(Loc.GetString("action-popup-lay-pball-inside-receive-done", ("entity", Identity.Entity(user, EntityManager))), target, target);
 
             if(myPballs.Temporary)
-                EntityManager.RemoveComponent<PrizeballLayingComponent>(user);
+                RemComp<PrizeballLayingComponent>(user);
             else
                 _actions.RemoveAction(user, myPballs.Action);
         }
@@ -186,7 +186,7 @@ public sealed class PrizeballLayingSystem : SharedPrizeballLayingSystem // HL: W
 
         _audio.PlayPvs(pballLaying.PballLaySound, user);
 
-        pballLaying.addPballs(-1.0f);
+        AddPballs(user, pballLaying, -1.0f);
         _movementSpeedModifier.RefreshMovementSpeedModifiers(user);
 
         if(pballLaying.hasPballs())

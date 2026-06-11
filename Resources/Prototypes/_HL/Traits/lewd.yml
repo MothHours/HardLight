@@ -59,7 +59,7 @@
   id: PrizeballLayer
   name: hl-trait-Prizeballlayer
   description: hl-trait-Prizeballlayer-desc
-  category: Physical
+  category: Lewd
   components:
     - type: PrizeballLaying
       eggSpawn:
