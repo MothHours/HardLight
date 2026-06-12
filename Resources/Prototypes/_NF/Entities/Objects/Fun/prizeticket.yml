@@ -43,8 +43,8 @@
   - type: Item
     heldPrefix: prize ticket
   - type: Appearance
+    solution: food # HL added The food component to the prize ticket, as well as prizeball juice for the prizeball layer trait 
   - type: Food
-    solution: food
     delay: 0.25
     forceFeedDelay: 1
   - type: FlavorProfile

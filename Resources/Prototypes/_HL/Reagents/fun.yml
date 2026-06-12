@@ -37,7 +37,7 @@
   desc: reagent-desc-prizeball-juice
   physicalDesc: reagent-physical-desc-vibrant
   group: Toxins
-  flavor: highscore
+  flavor: flavor-highscore
   color: "#872420"
   metabolisms:
     Poison:

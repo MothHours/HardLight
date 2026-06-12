@@ -17,7 +17,7 @@ namespace Content.Server.Animals.Systems;
 ///     Gives the ability to lay pballs/other things;
 ///     produces endlessly if the owner does not have a HungerComponent.
 /// </summary>
-public sealed class PrizeballLayingSystem : SharedPrizeballLayingSystem // HL: We've changed the base to SharedPrizeballLayingSystem so we can run the Verb drawing on the client.
+public sealed class PrizeballLayingSystem : SharedPrizeballLayingSystem //  We've changed the base to SharedPrizeballLayingSystem so we can run the Verb drawing on the client.
 {
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly SharedActionsSystem _actions = default!;
